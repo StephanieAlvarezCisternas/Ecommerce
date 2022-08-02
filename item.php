@@ -1,30 +1,32 @@
 <?php
-$nom = "Banana";
-
-$price = "1.50€ le kg";
-
+$name = "Banana";
+$price = 1.50;
 $img ="/img/banane.jpg";
 ?>
 
-
- <!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Titre de la page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title></title>
+    <style>
+    </style>
 </head>
+
 <body>
+<?php
+include "header.php";
+?>
+
 
 <h1>bienvenue</h1>
 <div>
-    <h2>article :<?= $nom ?> </h2>
-    <h3>Prix :<?= $price  ?> </h3>
+    <h2>article :<?= $name ?> </h2>
+    <h3>Prix :<?= $price . "€ le kilo"  ?> </h3>
     <img src="img/banane.jpg">
+
 </div>
 
-
-
+    <?php include "footer.php"; ?>
 </body>
 </html>
+
