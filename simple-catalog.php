@@ -2,13 +2,16 @@
 
 sort($products);
 
-print_r($products);
+print_r($products) . "<br>";
 echo "<br>";
 
 
 echo $products[0] . "<br>";
 echo $products[2] . "<br>";
 echo "<br>";
-for ($i =0; $i< count($products); $i++){
-echo $products[$i];
+
+
+    for ($i =0; $i< count($products); $i++){
+    echo $products[$i];
+
 }
