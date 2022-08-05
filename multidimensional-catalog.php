@@ -32,9 +32,9 @@ $products = [
 foreach ($products as $value){?>
   <div>
       <h3>Nom du produit : <?= $value ["name"]  ?> </h3>
-      <h3> Prix: <?= formatPrice($value ["price"]);?> </h3>
-      <h4> Discount: <?= formatPrice(discountedPrice ($value ["price"], $value ["discount"]));?> </h4>
-      <h3> PrixHT: <?= formatPrice(priceExcludingVAT($value ["price"]));?> </h3>
+      <h3> Prix: <?php formatPrice($value ["price"]);?> </h3>
+      <h4> Discount: <?php formatPrice(discountedPrice ($value ["price"], $value ["discount"]));?> </h4>
+      <h3> PrixHT: <?php formatPrice(priceExcludingVAT($value ["price"]));?> </h3>
       <img src=" <?= $value ["picture_url"]?>  "width = "250px" height="250px">
 
   </div>

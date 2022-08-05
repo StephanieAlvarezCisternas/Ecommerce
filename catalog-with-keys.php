@@ -36,26 +36,26 @@ $ipad = [
 <body>
         <div>
             <h3><?= $iphone['name'] ?></h3>
-            <p>Price : <?= formatPrice($iphone ["price"]) ?></p>
-            <h4> Discount: <?= formatPrice(discountedPrice ($iphone ["price"], $iphone ["discount"]));?> </h4>
-            <h3> PrixHT: <?= formatPrice(priceExcludingVAT($iphone ["price"]));?> </h3>
-            <img src=<?= $iphone['picture_url'] ?> alt="picture" "width = "250px" height="250px">
+            <p>Price : <?php formatPrice($iphone ["price"]) ?></p>
+            <h4> Discount: <?php formatPrice(discountedPrice ($iphone ["price"], $iphone ["discount"]));?> </h4>
+            <h3> PrixHT: <?php formatPrice(priceExcludingVAT($iphone ["price"]));?> </h3>
+            <img src="<?= $iphone['picture_url'] ?>" alt="picture" "width = "250px" height="250px">
         </div>
 
         <div>
             <h3><?= $ipad['name'] ?></h3>
-            <p>Price : <?=formatPrice($ipad ["price"]) ?></p>
-            <h4> Discount: <?= formatPrice(discountedPrice ($ipad ["price"], $ipad ["discount"]));?> </h4>
-            <h3> PrixHT: <?= formatPrice(priceExcludingVAT($ipad ["price"]));?> </h3>
-            <img src=<?= $ipad['picture_url'] ?> "width = "250px" height="250px">
+            <p>Price : <?php formatPrice($ipad ["price"]) ?></p>
+            <h4> Discount: <?php formatPrice(discountedPrice ($ipad ["price"], $ipad ["discount"]));?> </h4>
+            <h3> PrixHT: <?php formatPrice(priceExcludingVAT($ipad ["price"]));?> </h3>
+            <img src="<?= $ipad['picture_url'] ?>" width="250px" height="250px">
         </div>
 
         <div>
             <h3><?= $imac['name'] ?></h3>
-            <p>Price : <?= formatPrice($imac ["price"]) ?></p>
-            <h4> Discount: <?= formatPrice(discountedPrice ($imac ["price"], $imac ["discount"]));?> </h4>
-            <h3> PrixHT: <?= formatPrice(priceExcludingVAT($imac ["price"]));?> </h3>
-            <img src=<?= $imac['picture_url'] ?> "width = "250px" height="250px">
+            <p>Price : <?php formatPrice($imac ["price"]) ?></p>
+            <h4> Discount: <?php formatPrice(discountedPrice ($imac ["price"], $imac ["discount"]));?> </h4>
+            <h3> PrixHT: <?php formatPrice(priceExcludingVAT($imac ["price"]));?> </h3>
+            <img src="<?= $imac['picture_url'] ?>" width = "250px" height="250px">
         </div>
 </body>
 </html>
